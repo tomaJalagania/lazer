@@ -1,0 +1,83 @@
+:root {
+    --main-color: #AE67B9;
+    --main-font-color: #F0F0F0;
+}
+@font-face {
+    font-family: font1;
+    src: url(../fonts/font1.ttf);
+}
+@font-face {
+    font-family: geo_xibli-13744451808;
+    src: url(../fonts/geo_xibli-13744451808.ttf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.header {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--main-color);
+}
+.main-title {
+    font-family:  geo_xibli-13744451808;
+    font-weight: 400;
+    color: var(--main-font-color);
+}
+.baner-content {
+    position: relative;
+    width: 100%;
+    background-image: url(../images/fg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.baner-content .note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, rgba(240,240,240) 40%,rgba(240,240,240,0));
+}
+
+.baner-content .note img {
+    width: 18rem;
+    opacity: 0.3;
+    border-radius: 50%;
+}
+.logo {
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+.logo h2 {
+    transform: translateX(-50%);
+    font-family: font1;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 8rem;
+    letter-spacing: 1.2px;
+    color: var(--main-color);
+}
+.cit {
+    font-family: geo_xibli-13744451808;
+    margin-left: 13rem;
+    font-size: 1.1rem;
+}
