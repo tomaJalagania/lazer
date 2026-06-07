@@ -143,3 +143,40 @@ img {
     font-size: 1.2rem;
     color: var(--text-color-inwhite);
 }
+.services {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-color-inwhite);
+}
+.service-header {
+    text-align: center;
+    
+}
+.service-header h2 {
+    font-family: var(--font-geofirst);
+    letter-spacing: 1.2px;
+    font-weight: 300;
+}
+.service-header img {
+    width: 10rem;
+    rotate: -41deg;
+    margin-top: -3rem;
+}
+.services-table {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--font-geofirst);
+}
+.service-item {
+    background-color: var(--main-font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: var(--main-color) 1px 1px 1px;
+}
+.service-item img {
+    width: 50%;
+}
