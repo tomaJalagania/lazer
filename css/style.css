@@ -13,6 +13,7 @@
     --font-english-text: "Roboto", sans-serif;
     --font-geofirst: font1;
     --font-geo_xibli: geo_xibli-13744451808;
+    --text-color-inwhite: #292b2c;
 }
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
@@ -30,6 +31,7 @@ img {
     width: 90%;
     margin: auto;
 }
+/*=========== HEADER ==============*/
 .header {
     width: 100%;
     text-align: center;
@@ -101,4 +103,46 @@ img {
     font-size: 1.1rem;
     letter-spacing: 1px;
     text-decoration: none;
+}
+/*============ BANER ====================*/
+.baner {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    position: absolute;
+    background-image: url(../images/fg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center*/;
+    font-family: var(--font-geofirst);
+}
+.baner .cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--main-font-color) 30%,transparent);
+}
+.baner-desc {
+    display: flex;
+    margin-top: 30%;
+    transform: translateY(-90%);
+    flex-direction:column;
+    align-items: center;
+    width: 40%;
+    border: 1px solid var(--main-color);
+    border-radius: 10%;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+.baner-header {
+    
+    color: var(--main-color);
+}
+.baner-text {
+    font-size: 1.2rem;
+    color: var(--text-color-inwhite);
 }
