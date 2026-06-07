@@ -1,7 +1,12 @@
 :root {
     --main-color: #AE67B9;
     --main-font-color: #F0F0F0;
+    --logo-font-Courgette: "Courgette", cursive;
+    --font-english-text: "Roboto", sans-serif;
+
 }
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 @font-face {
     font-family: font1;
     src: url(../fonts/font1.ttf);
@@ -30,54 +35,34 @@ img {
     padding-bottom: 1rem;
     background-color: var(--main-color);
 }
-.main-title {
-    font-family:  geo_xibli-13744451808;
-    font-weight: 400;
-    color: var(--main-font-color);
-}
-.baner-content {
-    position: relative;
-    width: 100%;
-    background-image: url(../images/fg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 600px;
-}
-.baner-content .note {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(to right, rgba(240,240,240) 40%,rgba(240,240,240,0));
-}
-
-.baner-content .note img {
-    width: 18rem;
-    opacity: 0.3;
-    border-radius: 50%;
-}
-.logo {
-    width: 40rem;
+.header-logo {
     display: flex;
     align-items: center;
-    height: 300px;
-    margin-left: 10rem;
-    margin-top: 5rem;
+    
 }
-.logo h2 {
-    transform: translateX(-50%);
-    font-family: font1;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-top: 8rem;
-    letter-spacing: 1.2px;
-    color: var(--main-color);
+.header-logo .logo-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    filter: invert(80%);
 }
-.cit {
-    font-family: geo_xibli-13744451808;
-    margin-left: 13rem;
+.logo-text {
+    margin-left: 0.4rem;
+    color: var(--main-font-color);
+}
+.logo-text .name {
+    font-family: var(--logo-font-Courgette);
+    text-transform: capitalize;
     font-size: 1.1rem;
+}
+.logo-text .sep {
+    height: 1px;
+    background-color: var(--main-font-color);
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.logo-text .desk {
+    font-family: var(--font-english-text);
+    text-transform: capitalize;
+    font-size: 0.9rem;
 }
