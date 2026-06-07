@@ -1,12 +1,3 @@
-:root {
-    --main-color: #AE67B9;
-    --main-font-color: #F0F0F0;
-    --logo-font-Courgette: "Courgette", cursive;
-    --font-english-text: "Roboto", sans-serif;
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 @font-face {
     font-family: font1;
     src: url(../fonts/font1.ttf);
@@ -15,6 +6,17 @@
     font-family: geo_xibli-13744451808;
     src: url(../fonts/geo_xibli-13744451808.ttf)
 }
+:root {
+    --main-color: #AE67B9;
+    --main-font-color: #F0F0F0;
+    --logo-font-Courgette: "Courgette", cursive;
+    --font-english-text: "Roboto", sans-serif;
+    --font-geofirst: font1;
+    --font-geo_xibli: geo_xibli-13744451808;
+}
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +36,11 @@ img {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: var(--main-color);
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header-logo {
     display: flex;
@@ -65,4 +72,33 @@ img {
     font-family: var(--font-english-text);
     text-transform: capitalize;
     font-size: 0.9rem;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 3rem;
+    
+}
+.nav-link {
+    display: block;
+    position: relative;
+    font-family: var(--font-geofirst);
+    font-size: 1.3rem;
+    color: var(--main-font-color);
+    
+}
+.header-btn {
+    padding: 1rem 2.2rem;
+    border-radius: 10px;
+    background-color: var(--main-font-color);
+    vertical-align:middle;
+}
+.header-btn  {
+    font-family: var(--font-geofirst);
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
